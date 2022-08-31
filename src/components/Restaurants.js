@@ -5,7 +5,10 @@ class Restaurants extends Component {
 
   render() {
 
-    let restaurants = this.props.restaurants.map((restaurant, index) => <li key={index}>{restaurant.name}</li>);
+    let restaurants = this.props.restaurants.map((restaurant, index) => {
+      debugger
+      return (<li key={index}>{restaurant.name}</li>)
+    });
 
     return (
       <div>
